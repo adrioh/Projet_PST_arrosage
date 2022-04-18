@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/item1"
         android:icon="@drawable/ic_icon"
-        android:title="Item "
-        android:title=" accueil"
+        android:title="Accueil"
 
-
-        app:showAsAction= "ifRoom"
-        />
-        <item android:id="">
-            android:title= "Accueil"
-            android:title= "Statistique"
-            android:title= "Assistance"
-            android.title = "Options"
+    <!-- app:showAsAction="ifRoom"  -->
 
     />
+
+    <item android:id =" @+id/item2"
+        android:title= " Statistique"
+        app:showAsAction="never" />
+
+    <item android:id =" @+id/item3"
+        android:title= " Assistance"
+        app:showAsAction="never" />
+
+    <item android:id =" @+id/item4"
+
+            android:title= "Options"
+            app:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/subitem1"
+                android:title= "Sub Item 1" />
+
+            <item android:id="@+id/subitem2"
+                android:title="Sub Item 2" />
+
+        </menu>
+    </item>
+
+
+
 
 
 </menu>
